@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context="com.example.a74021.lab8.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp">
+        
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginRight="15dp"
+            android:text="添加条目"
+            android:textSize="16dp"
+            android:textAllCaps="false"
+            />
+        
+        <Button
+            android:id="@+id/quit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="退出"
+            android:textSize="16dp"
+            android:layout_toRightOf="@+id/add"
+            android:layout_marginLeft="15dp"
+            android:textAllCaps="false" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名"
+            android:textSize="18dp"
+            android:layout_marginLeft="45dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/birthText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="100dp"
+            android:text="生日"
+            android:textSize="18dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/giftText"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="礼物"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Start"
+        android:layout_weight="50"/>
+
+</LinearLayout>
